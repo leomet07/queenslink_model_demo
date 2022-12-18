@@ -2,10 +2,15 @@
 </script>
 
 <main>
-	<h1>Queenslink demo</h1>
+	<h1>QueensLink model demo</h1>
 	<p>
 		Feel free to zoom in and pan around. (scroll to zoom in, click and drag
 		to pan)
+	</p>
+	<p>
+		Source code: <a href="https://github.com/leomet07/queenslink_model_demo"
+			>github.com/leomet07/queenslink_model_demo</a
+		>
 	</p>
 	<div id="model_viewer_parent">
 		<model-viewer
@@ -32,17 +37,19 @@
 	main {
 		width: 100vw;
 		min-height: 100vh;
+		padding-top: 10px;
 	}
-	#model_viewer_parent {
-		width: 100vw;
-		height: 95vh;
+	#model_viewer_parent,
+	#model_viewer {
+		width: 95vw;
+		height: 85vh;
+		margin: auto;
 	}
 	#model_viewer {
-		width: 100%;
-		height: 100%;
+		border: 1px solid green;
 	}
+
 	h1 {
-		margin-top: 10px;
 		text-align: center;
 	}
 	main p {
